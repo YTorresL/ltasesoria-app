@@ -6,7 +6,7 @@ import { Title } from "@/components/titles"
 export function Intro({ locale }) {
   return (
     <section className="h-[455px] grid sm:grid-cols-2">
-      <div className="absolute sm:right-[3.5rem] right-0 sm:top-24 top-14">
+      <div className="absolute sm:right-[5.6rem] right-0 sm:top-24 top-14">
         <BACKGROUND_PATTERNS className="h-[436px] z-10" />
       </div>
       <div className="z-10 flex flex-col items-start justify-center gap-5 -mt-12 text-white sm:mr-10">
