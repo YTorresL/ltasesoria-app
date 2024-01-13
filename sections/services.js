@@ -35,7 +35,7 @@ export function Services({ locale }) {
     ],
   }
   return (
-    <section class="py-12">
+    <section class="py-12 overflow-hidden sm:overflow-visible">
       <div className="flex gap-2 -mb-8">
         <Title header={true} text={locale.services.title} size="text-base" />
         <div className="w-2 h-2 rounded-full bg-company-orange"></div>

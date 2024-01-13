@@ -56,7 +56,7 @@
       "label": "Contactanos",
       "url": "#contact"
     },
-    "image": "/intro/image5.png"
+    "image": "/intro/image5.webp"
   },
   "about": {
     "header": "LT Asesoría y Consulting",
@@ -176,7 +176,7 @@
     },
     "images": [
       "/benefits/image.jpg",
-      "/benefits/image2.jpeg"
+      "/benefits/image2.jpg"
     ],
     "list": [
       "Reducción de costos al optimizar el consumo de químicos.",

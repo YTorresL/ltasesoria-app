@@ -12,7 +12,7 @@ export function Team({ locale }) {
         </div>
         <p className="sm:w-[60%]">{locale.team.description}</p>
         <div className="flex flex-col gap-8 pt-6 pb-12 md:flex-row">
-          <div className="mx-auto sm:mx-0">
+          <div>
             <div className="w-56 h-64">
               <img
                 class="w-full h-full rounded-lg object-cover object-center"

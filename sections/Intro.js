@@ -37,6 +37,7 @@ export function Intro({ locale }) {
           width={500}
           className="object-contain w-auto h-full pb-5"
           alt={locale.intro.title}
+          priority
         />
       </div>
     </section>

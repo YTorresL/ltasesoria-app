@@ -102,7 +102,7 @@ export default function Header({
           <Button
             button={true}
             content={<CLOSE className="w-10 h-10" />}
-            styles="px-4 py-2 text-white sm:hidden mr-0 ml-auto"
+            styles="pr-8 pt-7 text-white sm:hidden mr-0 ml-auto"
             onClick={menuState ? hiddenMenu : showMenu}
           />
           <nav>
