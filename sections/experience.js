@@ -7,7 +7,7 @@ export function Experience({ locale }) {
         <Title header={true} text={locale.experience.title} size="text-base" />
         <div className="w-2 h-2 rounded-full bg-company-orange"></div>
       </div>
-      <div class="grid gap-5 lg:grid-cols-3 sm:grid-cols-2">
+      <div className="grid gap-5 lg:grid-cols-3 sm:grid-cols-2">
         {locale.experience.list.map((item, index) => (
           <Card
             title={item.title}
@@ -25,9 +25,9 @@ const Card = ({ title, profilePicture, header }) => {
   return (
     <div className="flex flex-col gap-1 text-base">
       <div className="w-full py-1 bg-company-orange"></div>
-      <div class="text-center overflow-hidden relative h-64">
+      <div className="relative h-64 overflow-hidden text-center">
         <img
-          class="w-full h-full object-cover object-center"
+          className="object-cover object-center w-full h-full"
           src={profilePicture}
           alt={header}
         />

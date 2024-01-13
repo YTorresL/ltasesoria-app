@@ -74,7 +74,7 @@ export default function Header({
               <Button
                 button={true}
                 content={<MENU className="w-10 h-10" />}
-                styles="bg-company-orange px-4 py-2 text-white sm:hidden"
+                styles="bg-company-orange py-2 text-white sm:hidden"
                 onClick={menuState ? hiddenMenu : showMenu}
               />
               <div className="hidden gap-4 sm:flex">
@@ -102,7 +102,7 @@ export default function Header({
           <Button
             button={true}
             content={<CLOSE className="w-10 h-10" />}
-            styles="pr-8 pt-7 text-white sm:hidden mr-0 ml-auto"
+            styles="pr-4 pt-7 text-white sm:hidden mr-0 ml-auto"
             onClick={menuState ? hiddenMenu : showMenu}
           />
           <nav>

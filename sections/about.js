@@ -3,8 +3,8 @@ import { Title } from "@/components/titles"
 
 export function About({ locale }) {
   return (
-    <section class="lg:gap-16 gap-6 items-center pt-10 pb-10 grid md:grid-cols-2">
-      <div class=" text-neutral-600 text-base flex flex-col gap-5 items-start">
+    <section className="grid items-center gap-6 pt-10 pb-10 lg:gap-16 md:grid-cols-2">
+      <div className="flex flex-col items-start gap-5 text-base  text-neutral-600">
         <div>
           <Title header={true} text={locale.about.header} size="text-base" />
           <Title title={true} text={locale.about.title} size="text-3xl" />
@@ -19,18 +19,17 @@ export function About({ locale }) {
           url={locale.about.button.url}
         />
       </div>
-      <div class="grid mx-auto lg:grid-cols-2 gap-4 mt-8">
+      <div className="grid gap-4 mx-auto mt-8 lg:grid-cols-2">
         <div className="sm:w-[275px] w-full hidden lg:block h-[300px] sm:h-[381px]">
           <img
-            class="w-full h-full object-cover object-center
-           rounded-lg"
+            className="object-cover object-center w-full h-full rounded-lg"
             src={locale.about.images[0]}
             alt={locale.about.title}
           />
         </div>
         <div className="sm:w-[275px] h-[300px] w-full sm:h-[381px]">
           <img
-            class="w-full h-full object-cover object-left rounded-lg"
+            className="object-cover object-left w-full h-full rounded-lg"
             src={locale.about.images[1]}
             alt={locale.about.title}
           />

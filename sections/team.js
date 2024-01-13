@@ -4,7 +4,7 @@ import { Title } from "@/components/titles"
 
 export function Team({ locale }) {
   return (
-    <section class="sm:py-10">
+    <section className="sm:py-10">
       <div className="flex flex-col gap-5 border-b text-neutral-600 border-neutral-200">
         <div>
           <Title header={true} text={locale.team.header} size="text-base" />
@@ -15,7 +15,7 @@ export function Team({ locale }) {
           <div>
             <div className="w-56 h-64">
               <img
-                class="w-full h-full rounded-lg object-cover object-center"
+                className="object-cover object-center w-full h-full rounded-lg"
                 src={locale.team.profile.image}
                 alt={locale.team.title}
               />

@@ -3,10 +3,10 @@ import { Button } from "./buttons"
 
 export function Footer({ locale }) {
   return (
-    <footer class="w-full p-4 border-t mt-auto mb-0 border-neutral-200 shadow md:flex md:items-center md:justify-between md:p-6 ">
-      <span class="text-sm text-neutral-600 sm:text-center ">
+    <footer className="w-full p-4 mt-auto mb-0 border-t shadow border-neutral-200 md:flex md:items-center md:justify-between md:p-6 ">
+      <span className="text-sm text-neutral-600 sm:text-center ">
         © {locale.footer.date}
-        <Link href={locale.footer.link.url} class="mx-1">
+        <Link href={locale.footer.link.url} className="mx-1">
           {locale.footer.link.title}.
         </Link>
       </span>

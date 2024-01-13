@@ -9,7 +9,7 @@ export function Title({ title, header, text, size, color }) {
 }
 
 const TitleComponent = ({ text, size, color = "text-gray-900" }) => (
-  <h2 class={`${size && size} leading-7 font-bold ${color}`}>{text}</h2>
+  <h2 className={`${size && size} leading-7 font-bold ${color}`}>{text}</h2>
 )
 
 const HeaderComponent = ({ text, size, color = "text-company-blue" }) => (

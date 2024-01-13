@@ -35,7 +35,7 @@ export function Services({ locale }) {
     ],
   }
   return (
-    <section class="py-12 overflow-hidden sm:overflow-visible">
+    <section className="py-12 overflow-hidden sm:overflow-visible">
       <div className="flex gap-2 -mb-8">
         <Title header={true} text={locale.services.title} size="text-base" />
         <div className="w-2 h-2 rounded-full bg-company-orange"></div>
@@ -56,13 +56,13 @@ export function Services({ locale }) {
 const Card = ({ title, description, header }) => {
   return (
     <div className="mx-4 my-10">
-      <div class="block rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] hover: transition ease-out duration-150 border border-white">
-        <div class="p-6 flex flex-col gap-5 items-start">
+      <div className="block rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] hover: transition ease-out duration-150 border border-white">
+        <div className="flex flex-col items-start gap-5 p-6">
           <div>
             <Title header={true} text={header} size="text-sm" />
             <Title title={true} text={title} size="text-xl" />
           </div>
-          <p class="text-base text-neutral-600 -mt-2">{description}</p>
+          <p className="-mt-2 text-base text-neutral-600">{description}</p>
         </div>
       </div>
     </div>
