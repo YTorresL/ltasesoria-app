@@ -12,7 +12,6 @@ export function Experience({ locale }) {
           <Card
             title={item.title}
             profilePicture={item.image.profilePicture}
-            header={item.header}
             key={index}
           />
         ))}
@@ -21,7 +20,7 @@ export function Experience({ locale }) {
   )
 }
 
-const Card = ({ title, profilePicture, header }) => {
+const Card = ({ title, profilePicture }) => {
   return (
     <div className="flex flex-col gap-1 text-base">
       <div className="w-full py-1 bg-company-orange"></div>
@@ -29,7 +28,7 @@ const Card = ({ title, profilePicture, header }) => {
         <img
           className="object-cover object-center w-full h-full"
           src={profilePicture}
-          alt={header}
+          alt={title}
         />
         <div className="absolute top-0 w-full h-full p-5 bg-black/30">
           <div className="flex flex-col items-center justify-center w-full h-full gap-5 ">

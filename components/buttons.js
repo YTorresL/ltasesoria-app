@@ -42,7 +42,7 @@ const LinkComponent = ({ url, target, label, styles, content }) => (
 )
 
 const ButtonComponent = ({ styles, onClick, content, type = "button" }) => (
-  <button className={styles} type={type} onClick={onClick}>
+  <button className={styles} type={type} onClick={onClick} aria-label="button">
     {content}
   </button>
 )
