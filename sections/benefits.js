@@ -3,7 +3,7 @@ import { Title } from "@/components/titles"
 
 export function Benefits({ locale }) {
   return (
-    <section className="grid items-center gap-6 pt-5 pb-12 lg:gap-16 sm:grid-cols-2">
+    <section className="grid items-center gap-6 pt-5 pb-12 lg:gap-16 md:grid-cols-2">
       <div className="grid gap-4 mx-auto mt-8 lg:grid-cols-2">
         <div className="sm:w-[275px] h-[300px] w-full sm:h-[381px]">
           <img

@@ -5,8 +5,8 @@ import { Title } from "@/components/titles"
 
 export function Intro({ locale }) {
   return (
-    <section className="h-[455px] grid sm:grid-cols-2">
-      <div className="absolute sm:right-[5.6rem] right-0 sm:top-24 top-14">
+    <section className="h-[455px] grid md:grid-cols-2">
+      <div className="absolute md:-right-[3rem] lg:right-[5.6rem] right-0 sm:top-24 top-14">
         <BACKGROUND_PATTERNS className="h-[436px] z-10" />
       </div>
       <div className="z-10 flex flex-col items-start justify-center gap-5 -mt-12 text-white sm:mr-10">
@@ -19,7 +19,7 @@ export function Intro({ locale }) {
           />
           <div className="w-2 h-2 rounded-full bg-company-blue"></div>
         </div>
-        <h1 className="font-bold sm:text-[2.7rem] text-2xl my-1 leading-7 sm:leading-[2.7rem]">
+        <h1 className="font-bold lg:text-[2.7rem] text-2xl my-1 leading-7 lg:leading-[2.7rem]">
           {locale.intro.title}
         </h1>
         <p className="leading-5 ">{locale.intro.description}</p>
@@ -30,7 +30,7 @@ export function Intro({ locale }) {
           url={locale.intro.button.url}
         />
       </div>
-      <div className="h-[414px] mx-auto z-10 hidden sm:block">
+      <div className="h-[414px] mx-auto z-10 hidden md:block">
         <Image
           src={locale.intro.image}
           height={500}

@@ -4,7 +4,7 @@ import { Title } from "@/components/titles"
 export function About({ locale }) {
   return (
     <section className="grid items-center gap-6 pt-10 pb-10 lg:gap-16 md:grid-cols-2">
-      <div className="flex flex-col items-start gap-5 text-base  text-neutral-600">
+      <div className="flex flex-col items-start gap-5 text-base text-neutral-600">
         <div>
           <Title header={true} text={locale.about.header} size="text-base" />
           <Title title={true} text={locale.about.title} size="text-3xl" />
@@ -27,7 +27,7 @@ export function About({ locale }) {
             alt={locale.about.title}
           />
         </div>
-        <div className="sm:w-[275px] h-[300px] w-full sm:h-[381px]">
+        <div className="md:w-[275px] h-[300px] w-full sm:h-[381px]">
           <img
             className="object-cover object-left w-full h-full rounded-lg"
             src={locale.about.images[1]}

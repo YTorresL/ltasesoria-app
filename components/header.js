@@ -23,7 +23,7 @@ export default function Header({
       <div className={`pb-2 ${path && "path"} bg-company-blue`}>
         <div className={`relative ${path && "path"} bg-company-orange`}>
           <header className={`text-sm ${color}`}>
-            <div className="sm:flex px-[4%] justify-end gap-8 items-center h-10 hidden">
+            <div className="md:flex px-[4%] justify-end gap-8 items-center h-10 hidden">
               <nav className="flex gap-2">
                 {locale.navigation.informationLink.map((item, index) => (
                   <Button
@@ -69,15 +69,15 @@ export default function Header({
                 />
               </div>
             </div>
-            <nav className="h-24 flex justify-between py-3 sm:py-0 px-[4%] items-center">
-              <LOGO className="z-10 h-20 sm:h-24" />
+            <nav className="h-24 flex justify-between py-3 md:py-0 px-[4%] items-center">
+              <LOGO className="z-10 h-20 md:h-24" />
               <Button
                 button={true}
                 content={<MENU className="w-10 h-10" />}
-                styles="bg-company-orange py-2 text-white sm:hidden"
+                styles="bg-company-orange py-2 text-white md:hidden"
                 onClick={menuState ? hiddenMenu : showMenu}
               />
-              <div className="hidden gap-4 sm:flex">
+              <div className="hidden gap-4 md:flex">
                 {locale.navigation.menuItems.map((item, index) => (
                   <Button
                     key={index}
@@ -102,7 +102,7 @@ export default function Header({
           <Button
             button={true}
             content={<CLOSE className="w-10 h-10" />}
-            styles="pr-4 pt-7 text-white sm:hidden mr-0 ml-auto"
+            styles="pr-4 pt-7 text-white md:hidden mr-0 ml-auto"
             onClick={menuState ? hiddenMenu : showMenu}
           />
           <nav>

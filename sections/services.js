@@ -16,7 +16,7 @@ export function Services({ locale }) {
     pauseOnHover: true,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1025,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -25,7 +25,7 @@ export function Services({ locale }) {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 680,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -56,13 +56,13 @@ export function Services({ locale }) {
 const Card = ({ title, description, header }) => {
   return (
     <div className="mx-4 my-10">
-      <div className="block rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] hover: transition ease-out duration-150 border border-white">
+      <div className="block rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] hover: transition ease-out duration-150 border border-white min-[680px]:h-[15rem]">
         <div className="flex flex-col items-start gap-5 p-6">
           <div>
             <Title header={true} text={header} size="text-sm" />
             <Title title={true} text={title} size="text-xl" />
           </div>
-          <p className="-mt-2 text-base text-neutral-600">{description}</p>
+          <p className="-mt-2 text-neutral-600">{description}</p>
         </div>
       </div>
     </div>

@@ -741,9 +741,6 @@ video {
 .gap-1 {
   gap: 0.25rem;
 }
-.gap-10 {
-  gap: 2.5rem;
-}
 .gap-2 {
   gap: 0.5rem;
 }
@@ -840,10 +837,6 @@ video {
 .p-6 {
   padding: 1.5rem;
 }
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -876,10 +869,6 @@ video {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -895,6 +884,9 @@ video {
 .pb-8 {
   padding-bottom: 2rem;
 }
+.pr-4 {
+  padding-right: 1rem;
+}
 .pt-10 {
   padding-top: 2.5rem;
 }
@@ -909,15 +901,6 @@ video {
 }
 .pt-7 {
   padding-top: 1.75rem;
-}
-.pr-5 {
-  padding-right: 1.25rem;
-}
-.pr-8 {
-  padding-right: 2rem;
-}
-.pr-4 {
-  padding-right: 1rem;
 }
 .text-center {
   text-align: center;
@@ -1109,16 +1092,6 @@ html {
     grid-column: span 2 / span 2;
   }
 
-  .sm\:mx-0 {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
-  .sm\:mx-10 {
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
-  }
-
   .sm\:mr-10 {
     margin-right: 2.5rem;
   }
@@ -1127,20 +1100,8 @@ html {
     margin-top: 0px;
   }
 
-  .sm\:block {
-    display: block;
-  }
-
   .sm\:flex {
     display: flex;
-  }
-
-  .sm\:hidden {
-    display: none;
-  }
-
-  .sm\:h-24 {
-    height: 6rem;
   }
 
   .sm\:h-\[381px\] {
@@ -1151,29 +1112,25 @@ html {
     width: 275px;
   }
 
-  .sm\:w-\[55\%\] {
-    width: 55%;
-  }
-
-  .sm\:w-\[60\%\] {
-    width: 60%;
-  }
-
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .sm\:gap-4 {
-    gap: 1rem;
+  .sm\:items-center {
+    align-items: center;
+  }
+
+  .sm\:justify-between {
+    justify-content: space-between;
   }
 
   .sm\:overflow-visible {
     overflow: visible;
   }
 
-  .sm\:py-0 {
-    padding-top: 0px;
-    padding-bottom: 0px;
+  .sm\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 
   .sm\:py-10 {
@@ -1183,10 +1140,6 @@ html {
 
   .sm\:pb-0 {
     padding-bottom: 0px;
-  }
-
-  .sm\:text-center {
-    text-align: center;
   }
 
   .sm\:text-4xl {
@@ -1203,10 +1156,70 @@ html {
   }
 }
 
+@media (min-width: 680px) {
+
+  .min-\[680px\]\:h-\[15rem\] {
+    height: 15rem;
+  }
+}
+
 @media (min-width: 768px) {
+
+  .md\:right-\[8rem\] {
+    right: 8rem;
+  }
+
+  .md\:right-\[5rem\] {
+    right: 5rem;
+  }
+
+  .md\:right-\[2rem\] {
+    right: 2rem;
+  }
+
+  .md\:right-\[1rem\] {
+    right: 1rem;
+  }
+
+  .md\:-right-\[1rem\] {
+    right: -1rem;
+  }
+
+  .md\:-right-\[3rem\] {
+    right: -3rem;
+  }
+
+  .md\:mx-10 {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
+  .md\:block {
+    display: block;
+  }
 
   .md\:flex {
     display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:h-24 {
+    height: 6rem;
+  }
+
+  .md\:w-\[275px\] {
+    width: 275px;
+  }
+
+  .md\:w-\[55\%\] {
+    width: 55%;
+  }
+
+  .md\:w-\[60\%\] {
+    width: 60%;
   }
 
   .md\:w-\[70\%\] {
@@ -1221,25 +1234,50 @@ html {
     flex-direction: row;
   }
 
-  .md\:items-center {
-    align-items: center;
+  .md\:gap-10 {
+    gap: 2.5rem;
   }
 
-  .md\:justify-between {
-    justify-content: space-between;
+  .md\:gap-4 {
+    gap: 1rem;
   }
 
   .md\:p-6 {
     padding: 1.5rem;
   }
 
+  .md\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
+  .md\:text-\[2\.7rem\] {
+    font-size: 2.7rem;
+  }
 }
 
 @media (min-width: 1024px) {
+
+  .lg\:right-\[5\.6rem\] {
+    right: 5.6rem;
+  }
+
+  .lg\:right-\[6rem\] {
+    right: 6rem;
+  }
+
+  .lg\:right-\[7rem\] {
+    right: 7rem;
+  }
+
+  .lg\:right-\[8rem\] {
+    right: 8rem;
+  }
 
   .lg\:block {
     display: block;
@@ -1255,6 +1293,21 @@ html {
 
   .lg\:gap-16 {
     gap: 4rem;
+  }
+
+  .lg\:text-\[2\.7rem\] {
+    font-size: 2.7rem;
+  }
+
+  .lg\:leading-\[2\.7rem\] {
+    line-height: 2.7rem;
+  }
+}
+
+@media (min-width: 1280px) {
+
+  .xl\:right-\[5\.6rem\] {
+    right: 5.6rem;
   }
 }
 /*!**************************************************************************************************************************************************************************************************************************************************************************************!*\

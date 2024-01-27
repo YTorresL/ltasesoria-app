@@ -51,8 +51,8 @@ export function Contact({ locale }) {
 
   return (
     <section className="py-10" id="contact">
-      <div className="grid items-center gap-10 sm:grid-cols-2">
-        <div className="flex flex-col gap-5 px-3 text-neutral-600">
+      <div className="grid items-center md:gap-10 sm:grid-cols-2">
+        <div className="flex flex-col gap-5 sm:px-3 text-neutral-600">
           <div>
             <Title
               header={true}
@@ -71,7 +71,7 @@ export function Contact({ locale }) {
 
         <form
           action="#"
-          className="flex flex-col justify-center gap-5 sm:mx-10"
+          className="flex flex-col justify-center gap-5 md:mx-10"
         >
           <div>
             <label

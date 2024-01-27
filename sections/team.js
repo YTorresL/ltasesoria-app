@@ -10,7 +10,7 @@ export function Team({ locale }) {
           <Title header={true} text={locale.team.header} size="text-base" />
           <Title title={true} text={locale.team.title} size="text-3xl" />
         </div>
-        <p className="sm:w-[60%]">{locale.team.description}</p>
+        <p className="md:w-[60%]">{locale.team.description}</p>
         <div className="flex flex-col gap-8 pt-6 pb-12 md:flex-row">
           <div>
             <div className="w-56 h-64">
@@ -21,7 +21,7 @@ export function Team({ locale }) {
               />
             </div>
           </div>
-          <div className="flex flex-col mt-5 gap-5 text-neutral-600 sm:w-[55%]">
+          <div className="flex flex-col mt-5 gap-5 text-neutral-600 md:w-[55%]">
             <div>
               <Title
                 title={true}
