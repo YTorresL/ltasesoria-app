@@ -5,14 +5,14 @@ export function Benefits({ locale }) {
   return (
     <section className="grid items-center gap-6 pt-5 pb-12 lg:gap-16 md:grid-cols-2">
       <div className="grid gap-4 mx-auto mt-8 lg:grid-cols-2">
-        <div className="sm:w-[275px] h-[300px] w-full sm:h-[381px]">
+        <div className="xl:w-[275px] h-[300px] w-full sm:h-[381px]">
           <img
             className="object-cover object-left w-full h-full rounded-lg"
             src={locale.benefits.images[0]}
             alt={locale.benefits.title}
           />
         </div>
-        <div className="sm:w-[275px] h-[300px] hidden lg:block sm:h-[381px]">
+        <div className="xl:w-[275px] h-[300px] hidden lg:block sm:h-[381px]">
           <img
             className="object-cover object-center w-full h-full rounded-lg"
             src={locale.benefits.images[1]}

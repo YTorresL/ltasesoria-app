@@ -20,14 +20,14 @@ export function About({ locale }) {
         />
       </div>
       <div className="grid gap-4 mx-auto mt-8 lg:grid-cols-2">
-        <div className="sm:w-[275px] w-full hidden lg:block h-[300px] sm:h-[381px]">
+        <div className="xl:w-[275px] w-full hidden lg:block h-[300px] sm:h-[381px]">
           <img
             className="object-cover object-center w-full h-full rounded-lg"
             src={locale.about.images[0]}
             alt={locale.about.title}
           />
         </div>
-        <div className="md:w-[275px] h-[300px] w-full sm:h-[381px]">
+        <div className="xl:w-[275px] h-[300px] w-full sm:h-[381px]">
           <img
             className="object-cover object-left w-full h-full rounded-lg"
             src={locale.about.images[1]}
